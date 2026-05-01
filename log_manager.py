@@ -13,8 +13,8 @@ class LogAnalyzer:
         count = 0
         with open(self.filename, 'r') as file:
             for line in file:
-                # Проверяваме за ERROR или CRITICAL (Case-sensitive)
-                if "ERROR" in line or "CRITICAL" in line:
+                # Проверяваме за ERROR или CRITICAL или WARNING (Case-sensitive)
+                if "ERROR" in line or "CRITICAL" in line or "WARNING" in line:
                     count += 1
         return count
 
