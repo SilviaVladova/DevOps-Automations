@@ -1,0 +1,5 @@
+Info: System started
+ERROR: Database connection failed
+INFO:User logged in
+CRITICAL: Disk space low
+ERROR:Timeout reached
