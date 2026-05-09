@@ -1,0 +1,9 @@
+import os
+
+file_path = "/Users/silvia.vladova/devops_test/config.php"
+
+if os.path.exists(file_path):
+    print("Ready for deploy")
+else:
+    print("Error: Config missing")
+
