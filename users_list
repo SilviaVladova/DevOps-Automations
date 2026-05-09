@@ -1,0 +1,13 @@
+import requests
+
+def test_get_users():
+    url = "https://starshoes.net"
+    response = requests.get(url)
+    
+  
+    assert response.status_code == 200, f"Expected 200 but got {response.status_code}"
+    
+    data = response.json()
+    assert "admin" in response.text, "Admin user not found in the response."
+    
+    print("Test passed successfully!")
